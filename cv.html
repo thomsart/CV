@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <!-- Liens vers des fichiers CSS ou frameworks -->
-    <link rel="stylesheet" href="/src/static/cv.css'">
+    <link rel="stylesheet" href="./cv.css">
 </head>
 <body>
     <!-- En-tête de la page -->
     <header>
         <nav>
             <ul>
-                <li><a onclick="loadPage('/src/chen/maroquiniere.html')">Chen maroquiniere</a></li>
-                <li><a onclick="loadPage('/src/chen/vendeuse.html')"> Chen vendeuse</a></li>
-                <li><a onclick="loadPage('/src/thomas/developpeur.html')">Thomas developpeur</a></li>
-                <li><a onclick="loadPage('/src/thomas/electrotechnicien.html')">Thomas electrotechnicien</a></li>
+                <li><a onclick="loadPage('/src/chen/maroquiniere.html')" href="#"
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Chen maroquiniere</a></li>
+                <li><a onclick="loadPage('/src/chen/vendeuse.html')" href="#"
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Chen vendeuse</a></li>
+                <li><a onclick="loadPage('/src/thomas/developpeur.html')" href="#"
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Thomas developpeur</a></li>
+                <li><a onclick="loadPage('/src/thomas/electrotechnicien.html')" href="#"
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Thomas electrotechnicien</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenu principal -->
-    <main id="main-content"></main>
+    <main></main>
     <!-- Pied de page -->
     <footer>
         <p>&copy; 2025 CV. All rights reserved.</p>
@@ -37,9 +41,8 @@
 
             const response = await fetch(page);
             const content = await response.text();
-            document.getElementById('main-content').innerHTML = content;
+            document.getElementsByTagName('main')[0].innerHTML = content;
         }
-
     </script>
 </body>
 </html>
