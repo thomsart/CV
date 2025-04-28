@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!-- Liens vers des fichiers CSS ou frameworks -->
+    <link rel="stylesheet" href="/src/static/cv.css'">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="loadPage('/src/chen/maroquiniere.html')">Chen maroquiniere</a></li>
+                <li><a onclick="loadPage('/src/chen/vendeuse.html')"> Chen vendeuse</a></li>
+                <li><a onclick="loadPage('/src/thomas/developpeur.html')">Thomas developpeur</a></li>
+                <li><a onclick="loadPage('/src/thomas/electrotechnicien.html')">Thomas electrotechnicien</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content"></main>
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 CV. All rights reserved.</p>
+    </footer>
+    <!-- Liens vers des fichiers JavaScript -->
+    <script>
+        async function loadPage(page) {
+
+            const header = document.getElementsByTagName('header')[0];
+            header.style.display = 'none';
+            const footer = document.getElementsByTagName('footer')[0];
+            footer.style.display = 'none';
+
+            const response = await fetch(page);
+            const content = await response.text();
+            document.getElementById('main-content').innerHTML = content;
+        }
+
+    </script>
+</body>
+</html>
