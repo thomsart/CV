@@ -7,7 +7,8 @@
     --font-size-h2: 2em;
     --font-size-h3: 1.5em;
     --font-size-h4: 1em;
-    --font-size-p: 1em;
+    --font-size-p: 1.1em;
+    --font-size-li: 1em;
 
 
     /* All sizes of parts from the main to the last */
@@ -73,7 +74,6 @@
 
 
 
-
 h1 {
     color: var(--h-color);
     font-size: var(--font-size-h1);
@@ -81,25 +81,38 @@ h1 {
 h2 {
     color: var(--h-color);
     font-size: var(--font-size-h2);
+    margin: 0;
+    padding: 0;
 }
 h3 {
     color: var(--h-color);
     font-size: var(--font-size-h3);
+    margin: 0;
+    padding: 0;
 }
 h4 {
     color: var(--h-color);
     font-size: var(--font-size-h4);
+    margin: 0.5em;
+    padding: 0;
 }
-p, ul, li {
+p, li {
     color: var(--p-color);
-    font-size: var(--font-size-p);
-    line-height: 1.2;
     padding-left: 0;
     margin-left: 3px;
 }
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.2;
+}
 li {
+    font-size: var(--font-size-li);
     list-style-position: inside;
 }
+
+
+
+
 
 
 
@@ -137,7 +150,7 @@ main {
 
 
     .bloc-top-left {
-        border: solid black 1px;
+        /* border: solid black 1px; */
         width: var(--bloc-top-left-width);
         height: var(--bloc-top-left-height);
     }
@@ -162,7 +175,7 @@ main {
 
 
     .bloc-top-right {
-        border: solid black 1px;
+        /* border: solid black 1px; */
         width: var(--bloc-top-right-width);
         height: var(--bloc-top-right-height);
     }
@@ -183,12 +196,12 @@ main {
 
 
     #exps {
-        border: solid black 1px;
+        /* border: solid black 1px; */
         width: var(--exps-width);
         height: var(--exps-height);
     }
         .bloc-exp {
-            border: solid black 1px;
+            /* border: solid black 1px; */
             width: var(--bloc-exp-width);
             /* height: var(--bloc-exp-height); */
         }
@@ -208,10 +221,6 @@ main {
                     height: var(--date-exp-height);
                     text-align: right;
                 }
-                    .title-date-exp-n-title-skill {
-                        margin: 0;
-                        padding: 0;
-                    }
             .body-exp {
                 width: var(--body-exp-width);
                 /* height: var(--body-exp-height); */
@@ -225,7 +234,7 @@ main {
 
         
     #skills {
-        border-color: solid black 1px;
+        /* border-color: solid black 1px; */
         width: var(--space-exp-width);
         height: var(--space-exp-height);
     }
