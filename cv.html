@@ -13,19 +13,19 @@
         <nav>
             <ul>
                 <li><a onclick="loadPage('/src/chen/maroquiniere.html')" href="#"
-                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Chen maroquiniere</a></li>
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'"><h1>Chen maroquiniere</h1></a></li>
                 <li><a onclick="loadPage('/src/chen/vendeuse.html')" href="#"
-                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Chen vendeuse</a></li>
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'"><h1>Chen vendeuse</h1></a></li>
                 <li><a onclick="loadPage('/src/thomas/developpeur.html')" href="#"
-                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Thomas developpeur</a></li>
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'"><h1>Thomas developpeur</h1></a></li>
                 <li><a onclick="loadPage('/src/thomas/electrotechnicien.html')" href="#"
-                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'">Thomas electrotechnicien</a></li>
+                    onmouseenter="this.style.color='red'" onmouseout="this.style.color='black'"><h1>Thomas electrotechnicien</h1></a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenu principal -->
-    <main></main>
+    <main style="display: none;"></main>
     <!-- Pied de page -->
     <footer>
         <p>&copy; 2025 CV. All rights reserved.</p>
@@ -34,10 +34,9 @@
     <script>
         async function loadPage(page) {
 
-            const header = document.getElementsByTagName('header')[0];
-            header.style.display = 'none';
-            const footer = document.getElementsByTagName('footer')[0];
-            footer.style.display = 'none';
+            document.getElementsByTagName('main')[0].style.display = 'block';
+            document.getElementsByTagName('header')[0].style.display = 'none';;
+            document.getElementsByTagName('footer')[0].style.display = 'none';;
 
             const response = await fetch(page);
             const content = await response.text();
