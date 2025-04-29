@@ -96,14 +96,13 @@ h4 {
     margin: 0.5em;
     padding: 0;
 }
-p, li {
+p, ul, li {
     color: var(--p-color);
     padding-left: 0;
-    margin-left: 3px;
+    margin-left: 5px;
 }
 p {
     font-size: var(--font-size-p);
-    line-height: 1.2;
 }
 li {
     font-size: var(--font-size-li);
@@ -150,7 +149,7 @@ main {
 
 
     .bloc-top-left {
-        /* border: solid black 1px; */
+        border: solid black 1px;
         width: var(--bloc-top-left-width);
         height: var(--bloc-top-left-height);
     }
