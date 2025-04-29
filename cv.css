@@ -1,17 +1,100 @@
+:root {
+    /* All color here */
+    --h-color: #2b3943;
+    --p-color: #7e86ab;
+    /* Fonts sizes */
+    --font-size-h1: 2.5em;
+    --font-size-h2: 2em;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1em;
+    --font-size-p: 1em;
+
+
+    /* All sizes of parts from the main to the last */
+    --main-width: 210mm;
+    --main-height: 297mm;
+
+    --leftnright-width: var(--main-width);
+    --leftnright-height: var(--main-height);
+    --left-width: calc(var(--leftnright-width) * 0.6);
+    --left-height: calc(var(--leftnright-height) * 1);
+    --right-width: calc(var(--leftnright-width) * 0.4);
+    --right-height: calc(var(--leftnright-height) * 1);
+
+    --bloc-top-left-width: calc(var(--left-width) * 1);
+    --bloc-top-left-height: calc(var(--left-height) * 0.14);
+    --fullname-width: calc(var(--bloc-top-left-width) * 1);
+    --fullname-height: calc(var(--bloc-top-left-height) * 0.5);
+    --profession-width: calc(var(--bloc-top-left-width) * 1);
+    --profession-height: calc(var(--bloc-top-left-height) * 0.5);
+    --introduce-width: calc(var(--bloc-top-left-width) * 1);
+    --introduce-height: calc(var(--bloc-top-left-height) * 1);
+    --space-bloc-top-left-width: calc(var(--bloc-top-left-width) * 1);
+    --space-bloc-top-left-height: calc(var(--bloc-top-left-height) * 0);
+
+    --bloc-top-right-width: calc(var(--right-width) * 1);
+    --bloc-top-right-height: calc(var(--right-width) * 0.14);
+    --contact-width: calc(var(--bloc-top-right-width) * 1);
+    --contact-height: calc(var(--bloc-top-right-height) * 0.5);
+    --photo-width: calc(var(--bloc-top-right-width) * 1);
+    --photo-height: calc(var(--bloc-top-right-height) * 0.5);
+    --space-bloc-top-right-width: calc(var(--bloc-top-right-width) * 1);
+    --space-bloc-top-right-height: calc(var(--bloc-top-right-height) * 0);
+
+    --exps-width: calc(var(--left-width) * 1);
+    --exps-height: calc(var(--left-height) * 0.7);
+    --bloc-exp-width: calc(var(--exps-width) * 1);
+    --bloc-exp-height: calc(var(--exps-height) * 0.15);
+    --header-exp-width: calc(var(--bloc-exp-width) * 1);
+    --header-exp-height: calc(var(--bloc-exp-height) * 0.15);
+    --title-exp-width: calc(var(--header-exp-width) * 0.5);
+    --title-exp-height: calc(var(--header-exp-height) * 1);
+    --date-exp-width: calc(var(--header-exp-width) * 0.5);
+    --date-exp-height: calc(var(--header-exp-height) * 1);
+    --body-exp-width: calc(var(--bloc-exp-width) * 1);
+    --body-exp-height: calc(var(--bloc-exp-height) * 0.85);
+    --space-exp-width: calc(var(--exps-width) * 1);
+    --space-exp-height: calc(var(--exps-height) * 0.02);
+
+    --skills-width: calc(var(--right-width) * 1);
+    --skills-height: calc(var(--right-height) * 0.7);
+    --bloc-skill-width: calc(var(--skills-width) * 1);
+    --bloc-skill-height: calc(var(--skills-height) * 0.25);
+    --title-skill-width: calc(var(--bloc-skill-width) * 1);
+    --title-skill-height: calc(var(--bloc-skill-height) * 0.2);
+    --body-skill-width: calc(var(--bloc-skill-width) * 1);
+    --body-skill-height: calc(var(--bloc-skill-height) * 0.8);
+    --space-skill-width: calc(var(--skills-width) * 1);
+    --space-skill-height: calc(var(--skills-height) * 0.02);
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+}
+
+
+
+
 h1 {
-    font-size: 2.5em;
+    color: var(--h-color);
+    font-size: var(--font-size-h1);
 }
 h2 {
-    font-size: 2em;
+    color: var(--h-color);
+    font-size: var(--font-size-h2);
 }
 h3 {
-    font-size: 1.5em;
+    color: var(--h-color);
+    font-size: var(--font-size-h3);
 }
 h4 {
-    font-size: 1em;
+    color: var(--h-color);
+    font-size: var(--font-size-h4);
 }
 p {
-    font-size: 1em;
+    color: var(--p-color);
+    font-size: var(--font-size-p);
 }
 
 
@@ -20,91 +103,115 @@ p {
 
 
 main {
-    border: solid black 2px;
-    background-color: darkgrey;
-    width: 210mm;
-    height: 297mm;
+    width: var(--main-width);
+    height: var(--main-height);
 }
-    #head {
-        border: solid yellow 2px;
-        width: 100%;
-        height: 1%;
-    }
+
+
     #leftnright {
         /* border: solid blue 2px; */
-        width: 100%;
-        height: 90%;
+        width: var(--leftnright-width);
+        height: var(--leftnright-height);
         display: flex;
         flex-direction: row;
     }
     #left {
         /* border: solid red 2px; */
-        width: 60%;
-        height: 100%;
-    background-color: darkcyan;
+        width: var(--left-width);
+        height: var(--left-height);
+        background-color: darkcyan;
     }
     #right {
         /* border: solid green 2px; */
-        width: 40%;
-        height: 100%;
-    background-color: khaki;
-    }
-    #bottom {
-        border: solid yellow 2px;
-        width: 100%;
-        height: 1%;
+        width: var(--right-width);
+        height: var(--right-height);
+        background-color: khaki;
     }
 
 
-
-
-
-#exps {
-    border: solid crimson 2px;
-    background-color: antiquewhite;
-    width: 100%;
-    height: 75%;
-}
-    .bloc-exp {
-        border: solid green 2px;
-        width: 100%;
-        /* height: 15%; */
+    .bloc-top-left {
+        border: solid crimson 2px;
+        height: 14%;
     }
-        .header-exp {
-            /* border: solid brown 2px; */
-            width: 100%;
-            height: 15%;
-            display: flex;
-            flex-direction: row;
+        #fullname {
+
         }
-            .title-exp {
-                /* border: solid red 2px; */
-                width: 50%;
-                height: 100%;
-                text-align: left;
+        #profession {
+
+        }
+        #introduce {
+
+        }
+        .space-bloc-top-left {
+            
+        }
+
+
+    .bloc-top-right {
+        border: solid crimson 2px;
+        height: 14%;
+    }
+        #contact {
+
+        }
+        #photo {
+
+        }
+        .space-bloc-top-right {
+            
+        }
+
+
+
+    #exps {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 70%;
+    }
+        .bloc-exp {
+            border: solid green 2px;
+            width: 100%;
+            /* height: 15%; */
+        }
+            .header-exp {
+                /* border: solid brown 2px; */
+                width: 100%;
+                height: 15%;
+                display: flex;
+                flex-direction: row;
             }
-            .date-exp {
-                /* border: solid blue 2px; */
-                width: 50%;
-                height: 100%;
-                text-align: right;
-            }
-                .font-title-date-exp {
-                    margin: 0;
-                    padding: 0;
+                .title-exp {
+                    /* border: solid red 2px; */
+                    width: 50%;
+                    height: 100%;
+                    text-align: left;
                 }
-        .body-exp {
-            /* border: solid black 2px; */
+                .date-exp {
+                    /* border: solid blue 2px; */
+                    width: 50%;
+                    height: 100%;
+                    text-align: right;
+                }
+                    .font-title-date-exp {
+                        margin: 0;
+                        padding: 0;
+                    }
+            .body-exp {
+                /* border: solid black 2px; */
+                width: 100%;
+            }
+        .space-exp {
+            border: solid pink 2px;
             width: 100%;
+            height: 2%;
         }
 
 
 
 
 
+        
+    #skills {
 
-.space-exp {
-    border: solid pink 2px;
-    width: 100%;
-    height: 2%;
-}
+    }
+
