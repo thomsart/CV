@@ -1,11 +1,14 @@
 :root {
     /* All color here */
-    --h-color: #2b3943;
-    --p-color: #7e86ab;
+    /* --leftnright-side-color: rgb(255, 241, 246); */
+    --left-side-color: rgb(255, 241, 246);
+    --right-side-color: rgb(255, 223, 148);
+    --h-color: #17222b;
+    --p-color: #4c5789;
 
     /* Fonts sizes */
-    --font-size-h1: 2.5em;
-    --font-size-h2: 2em;
+    --font-size-h1: 5em;
+    --font-size-h2: 2.2em;
     --font-size-h3: 1.5em;
     --font-size-h4: 1em;
     --font-size-p: 0.9em;
@@ -19,9 +22,9 @@
     --leftnright-height: calc(var(--main-height) * 1);
     --left-width: calc(var(--leftnright-width) * 0.6);
     --left-height: calc(var(--leftnright-height) * 1);
-    --space-between-width: calc(var(--leftnright-width) * 0.02);
+    --space-between-width: calc(var(--leftnright-width) * 0.05);
     --space-between-height: calc(var(--leftnright-height) * 1);
-    --right-width: calc(var(--leftnright-width) * 0.38);
+    --right-width: calc(var(--leftnright-width) * 0.35);
     --right-height: calc(var(--leftnright-height) * 1);
 
     --bloc-top-left-width: calc(var(--left-width) * 1);
@@ -82,53 +85,53 @@
 }
 
 @font-face {
-    font-family: 'DMSerifText';
-    src: url('./src/static/font/DM_Serif_Text/DMSerifText-Regular.ttf') format('woff2'),
-         url('./src/static/font/DM_Serif_Text/DMSerifText-Italic.ttf') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Saira';
-    src: url('./src/static/font/Saira/Saira-VariableFont_wdth,wght.ttf') format('woff2'),
-         url('./src/static/font/Saira/Saira-Italic-VariableFont_wdth,wght.ttf') format('woff');
+    font-family: 'Viaoda';
+    src: url('./src/static/font/Viaoda/ViaodaLibre-Regular.ttf') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Yusei';
+    src: url('./src/static/font/Yusei_Magic/YuseiMagic-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
 h1 {
-    color: var(--h-color);
-    font-size: var(--font-size-h1);
-    margin: 0.5em;
     font-family: 'Corinthia', sans-serif;
+    font-size: var(--font-size-h1);
+    color: var(--h-color);
+    margin: 0.3em;
 }
 h2 {
-    color: var(--h-color);
+    font-family: 'Viaoda', sans-serif;
     font-size: var(--font-size-h2);
-    margin: 0.5em;
-    font-family: 'DMSerifText', sans-serif;
+    color: var(--h-color);
+    margin: 1em;
 }
 h3 {
-    color: var(--h-color);
+    font-family: 'Viaoda';
     font-size: var(--font-size-h3);
-    margin: 0;
+    color: var(--h-color);
+    margin-top: 0;
+    margin-left: 1em;
     padding: 0;
-    font-family: 'DMSerifText';
 }
 h4 {
-    color: var(--h-color);
+    font-family: 'Viaoda';
     font-size: var(--font-size-h4);
+    color: var(--h-color);
     margin: 0.5em;
     padding: 0;
-    font-family: 'DMSerifText';
 }
 p, ul, li {
-    font-family: './src/static/font/Corinthia/Corinthia-Regular.ttf', sans-serif;
+    font-family: 'Yusei';
     color: var(--p-color);
     padding-left: 0;
     margin-left: 5px;
-    font-family: 'Saira';
 }
 p {
     font-size: var(--font-size-p);
@@ -155,22 +158,25 @@ main {
 
 
     #leftnright {
-        border: solid black 1px;
+        border: solid black 2px;
+        border-radius: 5px;
         width: var(--leftnright-width);
         height: var(--leftnright-height);
         display: flex;
         flex-direction: row;
     }
     #left {
+        background-color: var(--left-side-color);
         width: var(--left-width);
         height: var(--left-height);
     }
     #space-between {
-        background-color: pink;
+        /* background-color: pink; */
         width: var(--space-between-width);
         height: var(--space-between-height);
     }
     #right {
+        background-color: var(--right-side-color);
         width: var(--right-width);
         height: var(--right-height);
     }
@@ -178,9 +184,8 @@ main {
 
 
     .bloc-top-left {
-        border: solid black 1px;
-
-        background-color: rgb(178, 178, 232);
+        border: solid rgb(255, 255, 255) 1px;
+        /* background-color: rgb(178, 178, 232); */
         width: var(--bloc-top-left-width);
         height: var(--bloc-top-left-height);
     }
@@ -197,7 +202,7 @@ main {
             height: var(--introduce-height);
         }
         .space-bloc-top-left {
-            background-color: rgb(228, 60, 88);
+            /* background-color: rgb(228, 60, 88); */
             width: var(--space-bloc-top-left-width);
             height: var(--space-bloc-top-left-height);
         }
@@ -206,8 +211,7 @@ main {
 
     .bloc-top-right {
         /* border: solid black 1px; */
-
-        background-color: rgb(207, 232, 178);
+        /* background-color: rgb(207, 232, 178); */
         width: var(--bloc-top-right-width);
         height: var(--bloc-top-right-height);
     }
@@ -224,7 +228,7 @@ main {
             height: var(--photo-height);
         }
         .space-bloc-top-right {
-            background-color: rgb(228, 60, 88);
+            /* background-color: rgb(228, 60, 88); */
             width: var(--space-bloc-top-right-width);
             height: var(--space-bloc-top-right-height);
         }
@@ -262,7 +266,7 @@ main {
                 /* height: var(--body-exp-height); */
             }
         .space-exp {
-            background-color: pink;
+            /* background-color: pink; */
             width: var(--space-exp-width);
             height: var(--space-exp-height);
         }
@@ -287,7 +291,7 @@ main {
                 /* height: var(--body-skill-height); */
             }
         .space-skill {
-            background-color: pink;
+            /* background-color: pink; */
             width: var(--space-skill-width);
             height: var(--space-skill-height);
         }
