@@ -3,7 +3,7 @@
     --color-1: rgb(255, 241, 246);
     --color-2: rgb(238, 233, 219);
     --color-3: rgb(124, 33, 33);
-    --color-4: #bd5e5e;
+    --color-4: #d96c6c;
     --color-h: #4b3b87;
     --color-p: #393d53;
     --color-icons: var(--color-2);
@@ -58,7 +58,7 @@
     --bloc-top-right-width: calc(var(--right-width) * 1);
     --bloc-top-right-height: calc(var(--right-height) * 0.18); /*  ######################################  */
     --contact-width: calc(var(--bloc-top-right-width) * 1);
-    --contact-height: calc(var(--bloc-top-right-height) * 0.95);
+    --contact-height: calc(var(--bloc-top-right-height) * 0.8);
     --photo-width: calc(var(--bloc-top-right-width) * 1);
     --photo-height: calc(var(--bloc-top-right-height) * 0.95);
     --space-bloc-top-right-width: calc(var(--bloc-top-right-width) * 1);
@@ -108,7 +108,7 @@ h1 {
 h2 {
     font-family: 'Viaoda', sans-serif;
     font-size: var(--font-size-h2);
-    margin-top: 2em;
+    margin-top: 1.3em;
     margin-left: 0.3em;
 }
 h3 {
@@ -151,13 +151,13 @@ i {
 #left {
     background-color: var(--color-2);
 }
-/* #bloc-top-left-first {
-    background-color: var(--color-1);
+#bloc-top-left-first {
+    background-color: var(--color-4);
 }
-#bloc-top-left-second {
-    background-color: var(--color-1);
-}
-#exps {
+/* #bloc-top-left-second {
+    background-color: var(--color-2);
+} */
+/* #exps {
     background-color: var(--color-2);
 } */
 #space-between {
@@ -204,8 +204,8 @@ main {
         height: var(--right-height);
         background-repeat: no-repeat;
         background-image: url('/src/static/photo/thomas.jpg');
-        background-size: 100% 30%; /* widht height */
-        background-position: -50% -3.5%; /* Centre l'image dans le conteneur */
+        background-size: 90% 27%; /* widht height */
+        background-position: -30% -5%; /* Centre l'image dans le conteneur ########################################*/
     }
 
 
@@ -231,33 +231,6 @@ main {
         .space-bloc-top-left {
             width: var(--space-bloc-top-left-width);
             height: var(--space-bloc-top-left-height);
-        }
-
-
-
-    .bloc-top-right {
-        width: var(--bloc-top-right-width);
-        height: var(--bloc-top-right-height);
-    }
-        #contact {
-            width: var(--contact-width);
-            height: var(--contact-height);
-            padding-top: 1em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        #photo {
-            width: var(--photo-width);
-            height: var(--photo-height);
-        }
-        #photo-thomas{
-            /* width: var(--photo-width); */
-            /* height: var(--photo-height); */
-        }
-        .space-bloc-top-right {
-            width: var(--space-bloc-top-right-width);
-            height: var(--space-bloc-top-right-height);
         }
 
 
@@ -294,6 +267,41 @@ main {
             width: calc(var(--space-exp-width) * 0.3);
             height: var(--space-exp-height);
             margin: auto; /* to center */
+        }
+
+
+
+    .bloc-top-right {
+        width: var(--bloc-top-right-width);
+        height: var(--bloc-top-right-height);
+    }
+        #contact {
+            /* border: solid black 2px; */
+            width: var(--contact-width);
+            height: var(--contact-height);
+            padding: 0em;
+            margin-top: 1.5em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .tel-mail {
+            /* border: solid black 2px; */
+            margin-bottom: 0em;
+            padding-bottom: 0;
+        }
+        #photo {
+            width: var(--photo-width);
+            height: var(--photo-height);
+        }
+        #photo-thomas{
+            /* width: var(--photo-width); */
+            /* height: var(--photo-height); */
+        }
+        .space-bloc-top-right {
+            width: var(--space-bloc-top-right-width);
+            height: var(--space-bloc-top-right-height);
         }
 
 
