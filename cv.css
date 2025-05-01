@@ -154,18 +154,21 @@ i {
 #bloc-top-left-first {
     background-color: var(--color-4);
 }
-/* #bloc-top-left-second {
+#bloc-top-left-second {
     background-color: var(--color-2);
-} */
+}
+
 /* #exps {
     background-color: var(--color-2);
 } */
+
 #space-between {
     background-color: var(--color-4);
 }
 #right {
     background-color: var(--color-4);
 }
+
 /* #bloc-top-right-first {
     background-color: var(--color-4);
 }
@@ -203,13 +206,7 @@ main {
         width: var(--right-width);
         height: var(--right-height);
         background-repeat: no-repeat;
-        background-image: url('/src/static/photo/thomas.jpg');
-        background-size: 90% 27%; /* widht height */
-        background-position: -30% -5%; /* Centre l'image dans le conteneur ########################################*/
     }
-
-
-
     .bloc-top-left {
         border: solid var(--color-2) 1px;
         width: var(--bloc-top-left-width);
