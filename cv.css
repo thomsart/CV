@@ -1,13 +1,15 @@
 :root {
     /* All color here */
-    /* --leftnright-side-color: rgb(255, 241, 246); */
-    --left-side-color: rgb(255, 241, 246);
-    --right-side-color: rgb(255, 223, 148);
-    --h-color: #17222b;
-    --p-color: #4c5789;
+    --color-1: rgb(255, 241, 246);
+    --color-2: rgb(238, 233, 219);
+    --color-3: rgb(124, 33, 33);
+    --color-4: #bd5e5e;
+    --color-h: #4b3b87;
+    --color-p: #393d53;
+    --color-icons: var(--color-2);
 
     /* Fonts sizes */
-    --font-size-h1: 5em;
+    --font-size-h1: 6em;
     --font-size-h2: 2.2em;
     --font-size-h3: 1.5em;
     --font-size-h4: 1em;
@@ -28,7 +30,7 @@
     --right-height: calc(var(--leftnright-height) * 1);
 
     --bloc-top-left-width: calc(var(--left-width) * 1);
-    --bloc-top-left-height: calc(var(--left-height) * 0.14);
+    --bloc-top-left-height: calc(var(--left-height) * 0.18); /*  ######################################  */
     --fullname-width: calc(var(--bloc-top-left-width) * 1);
     --fullname-height: calc(var(--bloc-top-left-height) * 0.20);
     --profession-width: calc(var(--bloc-top-left-width) * 1);
@@ -38,17 +40,8 @@
     --space-bloc-top-left-width: calc(var(--bloc-top-left-width) * 1);
     --space-bloc-top-left-height: calc(var(--bloc-top-left-height) * 0.05);
 
-    --bloc-top-right-width: calc(var(--right-width) * 1);
-    --bloc-top-right-height: calc(var(--right-height) * 0.14);
-    --contact-width: calc(var(--bloc-top-right-width) * 1);
-    --contact-height: calc(var(--bloc-top-right-height) * 0.95);
-    --photo-width: calc(var(--bloc-top-right-width) * 1);
-    --photo-height: calc(var(--bloc-top-right-height) * 0.95);
-    --space-bloc-top-right-width: calc(var(--bloc-top-right-width) * 1);
-    --space-bloc-top-right-height: calc(var(--bloc-top-right-height) * 0.05);
-
     --exps-width: calc(var(--left-width) * 1);
-    --exps-height: calc(var(--left-height) * 0.7);
+    --exps-height: calc(var(--left-height) * 0.6); /*  ######################################  */
     --bloc-exp-width: calc(var(--exps-width) * 1);
     --bloc-exp-height: calc(var(--exps-height) * 0.15);
     --header-exp-width: calc(var(--bloc-exp-width) * 1);
@@ -60,10 +53,19 @@
     --body-exp-width: calc(var(--bloc-exp-width) * 1);
     --body-exp-height: calc(var(--bloc-exp-height) * 0.85);
     --space-exp-width: calc(var(--exps-width) * 1);
-    --space-exp-height: calc(var(--exps-height) * 0.005);
+    --space-exp-height: calc(var(--exps-height) * 0.002);
+
+    --bloc-top-right-width: calc(var(--right-width) * 1);
+    --bloc-top-right-height: calc(var(--right-height) * 0.18); /*  ######################################  */
+    --contact-width: calc(var(--bloc-top-right-width) * 1);
+    --contact-height: calc(var(--bloc-top-right-height) * 0.95);
+    --photo-width: calc(var(--bloc-top-right-width) * 1);
+    --photo-height: calc(var(--bloc-top-right-height) * 0.95);
+    --space-bloc-top-right-width: calc(var(--bloc-top-right-width) * 1);
+    --space-bloc-top-right-height: calc(var(--bloc-top-right-height) * 0.05);
 
     --skills-width: calc(var(--right-width) * 1);
-    --skills-height: calc(var(--right-height) * 0.7);
+    --skills-height: calc(var(--right-height) * 0.6); /*  ######################################  */
     --bloc-skill-width: calc(var(--skills-width) * 1);
     --bloc-skill-height: calc(var(--skills-height) * 0.3);
     --title-skill-width: calc(var(--bloc-skill-width) * 1);
@@ -98,38 +100,32 @@
     font-style: italic;
 }
 
-
-
 h1 {
     font-family: 'Corinthia', sans-serif;
     font-size: var(--font-size-h1);
-    color: var(--h-color);
-    margin: 0.3em;
+    margin-left: 0.1em;
 }
 h2 {
     font-family: 'Viaoda', sans-serif;
     font-size: var(--font-size-h2);
-    color: var(--h-color);
-    margin: 1em;
+    margin-top: 2em;
+    margin-left: 0.3em;
 }
 h3 {
     font-family: 'Viaoda';
     font-size: var(--font-size-h3);
-    color: var(--h-color);
     margin-top: 0;
-    margin-left: 1em;
+    margin: 0;
     padding: 0;
 }
 h4 {
     font-family: 'Viaoda';
     font-size: var(--font-size-h4);
-    color: var(--h-color);
     margin: 0.5em;
     padding: 0;
 }
 p, ul, li {
     font-family: 'Yusei';
-    color: var(--p-color);
     padding-left: 0;
     margin-left: 5px;
 }
@@ -142,12 +138,43 @@ li {
 }
 
 
-
-
-
-
-
-
+/* colors */
+h1, h2, h3, h4 {
+    color: var(--color-h);
+}
+p, ul, li {
+    color: var(--color-p);
+}
+i {
+    color: var(--color-icons);
+}
+#left {
+    background-color: var(--color-2);
+}
+/* #bloc-top-left-first {
+    background-color: var(--color-1);
+}
+#bloc-top-left-second {
+    background-color: var(--color-1);
+}
+#exps {
+    background-color: var(--color-2);
+} */
+#space-between {
+    background-color: var(--color-4);
+}
+#right {
+    background-color: var(--color-4);
+}
+/* #bloc-top-right-first {
+    background-color: var(--color-4);
+}
+#bloc-top-right-second {
+    background-color: var(--color-4);
+}
+#skills {
+    background-color: var(--color-4);
+} */
 
 
 main {
@@ -158,40 +185,40 @@ main {
 
 
     #leftnright {
-        border: solid black 2px;
-        border-radius: 5px;
+        /* border: solid black 1px; */
         width: var(--leftnright-width);
         height: var(--leftnright-height);
         display: flex;
         flex-direction: row;
     }
     #left {
-        background-color: var(--left-side-color);
         width: var(--left-width);
         height: var(--left-height);
     }
     #space-between {
-        /* background-color: pink; */
         width: var(--space-between-width);
         height: var(--space-between-height);
     }
     #right {
-        background-color: var(--right-side-color);
         width: var(--right-width);
         height: var(--right-height);
+        background-repeat: no-repeat;
+        background-image: url('/src/static/photo/thomas.jpg');
+        background-size: 100% 30%; /* widht height */
+        background-position: -50% -3.5%; /* Centre l'image dans le conteneur */
     }
 
 
 
     .bloc-top-left {
-        border: solid rgb(255, 255, 255) 1px;
-        /* background-color: rgb(178, 178, 232); */
+        border: solid var(--color-2) 1px;
         width: var(--bloc-top-left-width);
         height: var(--bloc-top-left-height);
     }
         #fullname {
             width: var(--fullname-width);
             height: var(--fullname-height);
+
         }
         #profession {
             width: var(--profession-width);
@@ -202,7 +229,6 @@ main {
             height: var(--introduce-height);
         }
         .space-bloc-top-left {
-            /* background-color: rgb(228, 60, 88); */
             width: var(--space-bloc-top-left-width);
             height: var(--space-bloc-top-left-height);
         }
@@ -210,25 +236,26 @@ main {
 
 
     .bloc-top-right {
-        /* border: solid black 1px; */
-        /* background-color: rgb(207, 232, 178); */
         width: var(--bloc-top-right-width);
         height: var(--bloc-top-right-height);
     }
         #contact {
             width: var(--contact-width);
             height: var(--contact-height);
-            padding-top: 2em;
+            padding-top: 1em;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: flex-start;
         }
         #photo {
             width: var(--photo-width);
             height: var(--photo-height);
         }
+        #photo-thomas{
+            /* width: var(--photo-width); */
+            /* height: var(--photo-height); */
+        }
         .space-bloc-top-right {
-            /* background-color: rgb(228, 60, 88); */
             width: var(--space-bloc-top-right-width);
             height: var(--space-bloc-top-right-height);
         }
@@ -236,12 +263,10 @@ main {
 
 
     #exps {
-        /* border: solid black 1px; */
         width: var(--exps-width);
         height: var(--exps-height);
     }
         .bloc-exp {
-            /* border: solid black 1px; */
             width: var(--bloc-exp-width);
             /* height: var(--bloc-exp-height); */
         }
@@ -254,7 +279,6 @@ main {
                 .title-exp {
                     width: var(--title-exp-width);
                     height: var(--title-exp-height);
-                    text-align: left;
                 }
                 .date-exp {
                     width: var(--date-exp-width);
@@ -266,15 +290,15 @@ main {
                 /* height: var(--body-exp-height); */
             }
         .space-exp {
-            /* background-color: pink; */
-            width: var(--space-exp-width);
+            background-color: var(--color-p);
+            width: calc(var(--space-exp-width) * 0.3);
             height: var(--space-exp-height);
+            margin: auto; /* to center */
         }
 
 
-        
+
     #skills {
-        /* border-color: solid black 1px; */
         width: var(--space-exp-width);
         height: var(--space-exp-height);
     }
@@ -291,7 +315,6 @@ main {
                 /* height: var(--body-skill-height); */
             }
         .space-skill {
-            /* background-color: pink; */
             width: var(--space-skill-width);
             height: var(--space-skill-height);
         }
