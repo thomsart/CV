@@ -30,7 +30,7 @@
     --right-height: calc(var(--leftnright-height) * 1);
 
     --bloc-top-left-width: calc(var(--left-width) * 1);
-    --bloc-top-left-height: calc(var(--left-height) * 0.18); /*  ######################################  */
+    --bloc-top-left-height: calc(var(--left-height) * 0.18);
     --fullname-width: calc(var(--bloc-top-left-width) * 1);
     --fullname-height: calc(var(--bloc-top-left-height) * 0.20);
     --profession-width: calc(var(--bloc-top-left-width) * 1);
@@ -41,7 +41,7 @@
     --space-bloc-top-left-height: calc(var(--bloc-top-left-height) * 0.05);
 
     --exps-width: calc(var(--left-width) * 1);
-    --exps-height: calc(var(--left-height) * 0.6); /*  ######################################  */
+    --exps-height: calc(var(--left-height) * 0.6);
     --bloc-exp-width: calc(var(--exps-width) * 1);
     --bloc-exp-height: calc(var(--exps-height) * 0.15);
     --header-exp-width: calc(var(--bloc-exp-width) * 1);
@@ -56,7 +56,7 @@
     --space-exp-height: calc(var(--exps-height) * 0.002);
 
     --bloc-top-right-width: calc(var(--right-width) * 1);
-    --bloc-top-right-height: calc(var(--right-height) * 0.18); /*  ######################################  */
+    --bloc-top-right-height: calc(var(--right-height) * 0.18);
     --contact-width: calc(var(--bloc-top-right-width) * 1);
     --contact-height: calc(var(--bloc-top-right-height) * 0.8);
     --photo-width: calc(var(--bloc-top-right-width) * 1);
@@ -65,7 +65,7 @@
     --space-bloc-top-right-height: calc(var(--bloc-top-right-height) * 0.05);
 
     --skills-width: calc(var(--right-width) * 1);
-    --skills-height: calc(var(--right-height) * 0.6); /*  ######################################  */
+    --skills-height: calc(var(--right-height) * 0.6);
     --bloc-skill-width: calc(var(--skills-width) * 1);
     --bloc-skill-height: calc(var(--skills-height) * 0.3);
     --title-skill-width: calc(var(--bloc-skill-width) * 1);
@@ -291,10 +291,6 @@ main {
         #photo {
             width: var(--photo-width);
             height: var(--photo-height);
-        }
-        #photo-thomas{
-            /* width: var(--photo-width); */
-            /* height: var(--photo-height); */
         }
         .space-bloc-top-right {
             width: var(--space-bloc-top-right-width);
