@@ -4,7 +4,7 @@
     --color-2: rgb(238, 233, 219);
     --color-3: rgb(124, 33, 33);
     --color-4: #d96c6c;
-    --color-h: #4b3b87;
+    --color-h: #5b4e8b;
     --color-p: #393d53;
     --color-icons: var(--color-2);
 
@@ -56,16 +56,16 @@
     --space-exp-height: calc(var(--exps-height) * 0.002);
 
     --bloc-top-right-width: calc(var(--right-width) * 1);
-    --bloc-top-right-height: calc(var(--right-height) * 0.18);
+    --bloc-top-right-height: calc(var(--right-height) * 0.17);
     --contact-width: calc(var(--bloc-top-right-width) * 1);
-    --contact-height: calc(var(--bloc-top-right-height) * 0.8);
+    --contact-height: calc(var(--bloc-top-right-height) * 0.68);
     --photo-width: calc(var(--bloc-top-right-width) * 1);
     --photo-height: calc(var(--bloc-top-right-height) * 0.95);
     --space-bloc-top-right-width: calc(var(--bloc-top-right-width) * 1);
     --space-bloc-top-right-height: calc(var(--bloc-top-right-height) * 0.05);
 
     --skills-width: calc(var(--right-width) * 1);
-    --skills-height: calc(var(--right-height) * 0.6);
+    --skills-height: calc(var(--right-height) * 0.7);
     --bloc-skill-width: calc(var(--skills-width) * 1);
     --bloc-skill-height: calc(var(--skills-height) * 0.3);
     --title-skill-width: calc(var(--bloc-skill-width) * 1);
@@ -269,24 +269,25 @@ main {
 
 
     .bloc-top-right {
+        /* border: solid black 3px; */
         width: var(--bloc-top-right-width);
         height: var(--bloc-top-right-height);
     }
         #contact {
-            /* border: solid black 2px; */
+            /* border: solid rgb(145, 0, 0) 2px; */
             width: var(--contact-width);
             height: var(--contact-height);
             padding: 0em;
-            margin-top: 1.5em;
+            margin-top: 4em;
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            align-content: space-around;
             align-items: flex-end;
         }
         .tel-mail {
-            /* border: solid black 2px; */
+            /* border: solid rgb(5, 0, 136) 2px; */
             margin-bottom: 0em;
-            padding-bottom: 0;
+            padding-bottom: 0em;
         }
         #photo {
             width: var(--photo-width);
@@ -300,12 +301,12 @@ main {
 
 
     #skills {
-        width: var(--space-exp-width);
-        height: var(--space-exp-height);
+        /* border: solid black 2px; */
+        width: var(--space-skill-width);
+        height: var(--space-skill-height);
     }
         .bloc-skill {
             width: var(--bloc-skill-width);
-            /* height: var(--bloc-skill-height); */
         }
             .title-skill {
                 width: var(--title-skill-width);
@@ -313,7 +314,6 @@ main {
             }
             .body-skill {
                 width: var(--body-skill-width);
-                /* height: var(--body-skill-height); */
             }
         .space-skill {
             width: var(--space-skill-width);
